@@ -1,0 +1,97 @@
+body{
+    background: rgb(255,215,250);
+    background: radial-gradient(circle, rgba(255,215,250,1) 0%, rgba(246,219,227,1) 30%, rgba(252,241,196,1) 54%, rgba(201,254,224,1) 88%);
+    font-family: sans-serif;
+    margin: 0px;
+    margin-left:auto;
+    margin-right:auto;
+    min-height: 90vh;
+    color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    color: magenta;
+    width: fit-content;
+}
+header h1, header h2{
+    padding: 0px;
+    margin: 0px;
+}
+
+.tile {
+    background: rgba( 255, 255, 255, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+    border-radius: 10px;
+    padding: .5em;
+    transition: 0.3s;
+    user-select: none;
+}
+
+.tile:hover{
+    box-shadow: 0 8px 10px 0 rgba( 31, 38, 135, 0.37 );
+    cursor: pointer;
+}
+
+#connection-status{
+    background-color: transparent;
+    border-radius: 0.25rem;
+    border-width: 0px;
+}
+
+canvas{
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 10px;
+    border: 1px solid magenta;
+    cursor: none;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.card .header{
+    display: flex;
+    flex-direction: row;
+
+}
+
+input {
+    background-color: transparent;
+    border:0px;
+    color: inherit;
+    width:10rem;
+    font-size: 100%;
+}
+
+.input-container {
+    font-size: 125%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.card-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

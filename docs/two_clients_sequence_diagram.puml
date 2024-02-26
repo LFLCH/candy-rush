@@ -1,0 +1,18 @@
+@startuml two_clients_sequence_diagram
+
+User1 -> Client1: load frontend
+User2 -> Client2: load frontend
+Client1 -> Server: send "connect"
+Client2 -> Server: send "connect"
+Server -> Client1: acknowledge as "registration" with UUID
+Server -> Client2: acknowledge as "registration" with UUID
+Client1 -> User1: connection notification
+Client2 -> User2: connection notification
+Client1 -> Server: send "player-ready" with UUID
+Client2 -> Server: send "player-ready" with UUID
+Server -> Client1: send "game-init"
+Server -> Client2: send "game-init"
+Client1 -> User1: display map
+Client2 -> User2: display map
+
+@enduml

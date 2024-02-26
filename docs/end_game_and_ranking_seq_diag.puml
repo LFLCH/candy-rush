@@ -1,0 +1,10 @@
+@startuml end_game_and_ranking_sequence_diagram
+
+Server -> Client1: send "game-end"
+Server -> Client2: send "game-end"
+Client1 -> Client1: ranking display and computation
+Client1 -> Client1: + countdown
+Client2 -> Client2: ranking display and computation
+Client2 -> Client2: + countdown
+
+@enduml

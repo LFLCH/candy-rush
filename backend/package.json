@@ -1,0 +1,42 @@
+{
+  "name": "candy-rush-server",
+  "version": "1.0.0",
+  "description": "A server that handles the  🍬 candy rush game : a WAN multiplayer game where the player need to eat candies.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest test",
+    "build": "tsc",
+    "start": "node build/src/index.js",
+    "serve": "npm run build && npm run start",
+    "dev": "nodemon --watch src --ext ts  --exec npm run serve",
+    "clean": "rm -rf build"
+  },
+  "keywords": [
+    "Distributed",
+    "System",
+    "Multiplayer",
+    "game"
+  ],
+  "author": "Léo Filoche & Jérémy Bindel",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "@babel/preset-typescript": "^7.23.3",
+    "@jest/globals": "^29.7.0",
+    "@types/node": "^20.11.6",
+    "@types/uuid": "^9.0.8",
+    "@types/ws": "^8.5.10",
+    "babel-jest": "^29.7.0",
+    "nodemon": "^3.0.3",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "uuid": "^9.0.1",
+    "ws": "^8.16.0"
+  },
+  "transform": {
+    "^.+\\.tsx?$": "babel-jest"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "candy-rush-client",
+  "version": "1.0.0",
+  "description": "🍭 Candy Rush : Eat the candies to win !",
+  "main": "index.js",
+  "scripts": {
+    "mock": "node test/mock-server.js",
+    "test": "mkdirp test/src && cp src/*.js test/src && npx serve test -p 3010",
+    "start": "npx serve src"
+  },
+  "author": "Léo Filoche && Jérémy Bindel",
+  "license": "ISC",
+  "devDependencies": {
+    "mkdirp": "^3.0.1"
+  },
+  "dependencies": {
+    "ws": "^8.16.0"
+  }
+}

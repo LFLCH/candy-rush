@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"   type="image/png"    href="images/lollipop.png">
+    <title>Candy Rush</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="libs/p5.min.js"></script>
+    <script src="libs/party.min.js"></script>
+</head>
+<body>
+    <main>
+        <header class="tile">
+            <h1><span id="connection-status"></span> Candy Rush </h1> 
+        </header>
+        <article class="tile card">
+            <div class="header">
+                <div class="input-container">
+                    <div class="pseudo-wrapper">
+                        @<input type="text" id="pseudo" value="pseudo" readonly>
+                    </div>
+                    <div class="score-wrapper">
+                        score :
+                        <span id="score">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-content">
+                    <canvas width="600" height="600"></canvas>
+            </div>
+
+        </article>
+        <footer class="tile">
+            ©️ Léo Filoche & Jérémy Bindel
+        </footer>
+    </main>
+    <script src="entities.js"></script>
+    <script src="sketch.js"></script>
+    <script src="controller.js"></script>
+    <script src="communication.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+@startuml capture_candy_sequence_diagram
+
+User1 -> Client1: load frontend
+User2 -> Client2: load frontend
+User1 -> Client1: move on the UI
+Client1 -> Server: protocol exchanges for movement
+User1 -> Client1: move on a Candy
+Client1 -> Server: send "player-update"
+Server -> Server: new client position calculation
+Server -> Server: compute whether any candy is on the new position
+Server -> Client1: send "game-update"
+Client1 -> User1: update map
+Server -> Client2: send "game-update"
+Client2 -> User2: update map
+note right
+    The candy has been eaten on the two client devices.
+end note
+
+@enduml

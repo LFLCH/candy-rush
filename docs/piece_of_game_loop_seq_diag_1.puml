@@ -1,0 +1,16 @@
+@startuml piece_of_game_loop_sequence_diagram
+
+User -> Client: load frontend
+Client -> Server: protocol exchanges for client connection
+Server -> Client: ...
+Server -> Client: send "game-init"
+note right
+    At the beginning, only "game-init" is sent.
+    The player can move.
+    There are no candies on the map.
+end note
+Server -> Server: countdown from 10 to 0
+Server -> Client: send "game-start"
+Client -> User: display map with players and candies
+
+@enduml

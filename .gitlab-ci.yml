@@ -1,0 +1,36 @@
+image: node:latest
+
+stages:
+  - build
+  - test
+
+backend:
+  stage: build
+  script:
+    - cd backend
+    - npm install
+  cache:
+    paths:
+      - backend/node_modules/
+  artifacts:
+    expire_in: 1 days
+    when: on_success
+    paths:
+      - backend/node_modules/
+
+back_test:
+  stage: test
+  coverage: /All files[^|]*\|[^|]*\s+([\d\.]+)/
+  dependencies:
+    - backend
+  script:
+    - cd backend
+    - ./node_modules/.bin/jest --updateSnapshot
+  artifacts:
+    when: always
+    reports:
+      junit:
+        - junit.xml
+      coverage_report:
+          coverage_format: cobertura
+          path: coverage/cobertura-coverage.xml

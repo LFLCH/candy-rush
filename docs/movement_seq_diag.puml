@@ -1,0 +1,14 @@
+@startuml movement_sequence_diagram
+
+User -> Client: load frontend
+Client -> Client: controller position acquistion
+Client -> Client: angle calculation
+Client -> Server: send "player-update"
+Server -> Server: new client position calculation
+Server -> Client: send "game-update" | send "game-init"
+note right
+    The method protocol depends whether the game has started or not.
+end note
+Client -> User: update map
+
+@enduml

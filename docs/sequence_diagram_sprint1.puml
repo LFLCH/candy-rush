@@ -1,0 +1,11 @@
+@startuml sequence_diagram_sprint1
+
+User -> Client: load frontend
+Client -> Server: send "connect"
+Server -> Client: acknowledge as "registration" with UUID
+Client -> User: connection notification
+Client -> Server: send "player-ready" with UUID
+Server -> Client: send "game-init"
+Client -> User: display map
+
+@enduml
