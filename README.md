@@ -4,7 +4,8 @@ A multiplayer web game. Up to 5 players, be the first to collect the maximum of 
 
 ## Demo
 
-![assets/demo_candy_rush.mp4](assets/demo_candy_rush.mp4)
+https://github.com/LFLCH/candy-rush/assets/62034725/42ecd6bf-e9a9-487d-a47c-07507dcdf02d
+
 
 ## Rules
 
