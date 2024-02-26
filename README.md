@@ -40,14 +40,14 @@ In order to properly exchange messages between the clients and the server, a for
 
 | Origin | Method | Description |
 |--------|--------|-------------|
-|client|connect|Connection initialization |
-|server|registration|Validation of the connection attempt|
-|client|player-ready|Request to join the new game|
-|server|game-init|Update of the waiting room, with the list of all the registered players|
-|server|game-start|Starting game event|
-|client|player-update|Move done by the player|
-|server|game-update|Candies and players positions and scores update|
-|server|game-end|End game event|
+|**client**|```connect```|Connection initialization |
+|**server**|```registration```|Validation of the connection attempt|
+|**client**|```player-ready```|Request to join the new game|
+|**server**|```game-init```|Update of the waiting room, with the list of all the registered players|
+|**server**|```game-start```|Starting game event|
+|**client**|```player-update```|Move done by the player|
+|**server**|```game-update```|Candies and players positions and scores update|
+|**server**|```game-end```|End game event|
 
 ## Authors
 [Léo FILOCHE](https://github.com/LFLCH) & [Jérémy Bindel](https://github.com/J-Bindel)

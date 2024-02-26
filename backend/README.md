@@ -4,7 +4,12 @@
 ## Prerequisite
 A recent node version (20+).
 
-## Run
+Install the dependencies with :
+```bash
+npm install
+```
+
+## Commands
 ```bash
 # build : compile .ts files into .js files
 npm run build
