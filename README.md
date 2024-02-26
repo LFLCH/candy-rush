@@ -8,7 +8,7 @@ https://github.com/LFLCH/candy-rush/assets/62034725/42ecd6bf-e9a9-487d-a47c-0750
 
 ## Rules
 
-Each item that you eat influence you score.
+Eating an item modifies the player's score.
 
 | Candy  | Points  |
 |---|---|
@@ -47,4 +47,4 @@ In order to properly exchange messages between the clients and the server via [W
 |**server**|```game-end```|End game event|
 
 ## Authors
-[Léo FILOCHE](https://github.com/LFLCH) & [Jérémy Bindel](https://github.com/J-Bindel)
+[Léo FILOCHE](https://github.com/LFLCH) & [Jérémy BINDEL](https://github.com/J-Bindel)
